@@ -4,7 +4,7 @@
 
 
 Pod::Spec.new do |s|
-    s.name         = 'YYTools'
+    s.name         = 'YYTooling'
     s.version      = '1.0.0'
     s.summary      = 'a YYTools component'
     s.homepage     = 'https://github.com/ArrQ/YYTools'
@@ -14,10 +14,10 @@ Pod::Spec.new do |s|
     s.framework = "UIKit","Foundation"
     s.source       = { :git => 'https://github.com/ArrQ/YYTools.git', :tag => s.version }
     s.requires_arc = true
-    s.source_files = 'YYTools/YYTools/YYTools/YYTools.h'
+    s.source_files = 'YYTools/YYTooling/YYTools.h'
     s.subspec 'YYNoticeViewTool' do |ss|
         ss.ios.deployment_target = '8.0'
-        ss.source_files = 'YYTools/YYTools/YYTools/YYNoticeViewTool/YYNoticeViewTool.h','YYTools/YYTools/YYTools/YYNoticeViewTool/**/**.{h,m}'
+        ss.source_files = 'YYTools/YYTooling/YYNoticeViewTool/YYNoticeViewTool.h','YYTools/YYTooling/YYNoticeViewTool/**/**.{h,m}'
     end
    
 end
@@ -29,17 +29,17 @@ end
 
 # git push origin 1.0.1
 
-# pod lib lint wyyCommon.podspec --allow-warnings
+# pod lib lint YYTooling.podspec --allow-warnings
 
-# pod trunk push wyyCommon.podspec --allow-warnings
-# pod lib lint wyyCommon.podspec --verbose(依赖库) 有错误提示时 用这个吧，记得添加依赖
+# pod trunk push YYTooling.podspec --allow-warnings
+# pod lib lint YYTooling.podspec --verbose(依赖库) 有错误提示时 用这个吧，记得添加依赖
 # 如果有引用到库framwork或C语言库的话必须使用
 
-# pod spec lint wyyCommon.podspec --use-libraries // 验证
+# pod spec lint YYTooling.podspec --use-libraries // 验证
 
-# pod trunk push wyyCommon.podspec --use-libraries           // 上传
+# pod trunk push YYTooling.podspec --use-libraries           // 上传
 
-# pod trunk push YYCommon.podspec --allow-warnings --use-libraries   // 依赖库的时候用嘛
+# pod trunk push YYTooling.podspec --allow-warnings --use-libraries   // 依赖库的时候用嘛
 
 
 

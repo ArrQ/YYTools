@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8429CF1C21E2EE3E006620E4 /* YYNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8429CF1921E2EE3E006620E4 /* YYNoticeView.m */; };
 		84620CB821E0AD8F00C0A408 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CB721E0AD8F00C0A408 /* AppDelegate.m */; };
 		84620CBB21E0AD8F00C0A408 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CBA21E0AD8F00C0A408 /* ViewController.m */; };
 		84620CBE21E0AD8F00C0A408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84620CBC21E0AD8F00C0A408 /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		84620CC621E0AD9B00C0A408 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CC521E0AD9B00C0A408 /* main.m */; };
 		84620CD021E0AD9B00C0A408 /* YYToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CCF21E0AD9B00C0A408 /* YYToolsTests.m */; };
 		84620CDB21E0AD9B00C0A408 /* YYToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CDA21E0AD9B00C0A408 /* YYToolsUITests.m */; };
-		84620CF821E0B70100C0A408 /* YYNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CF521E0B70100C0A408 /* YYNoticeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8429CF1821E2EE3E006620E4 /* YYNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYNoticeView.h; sourceTree = "<group>"; };
+		8429CF1921E2EE3E006620E4 /* YYNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYNoticeView.m; sourceTree = "<group>"; };
+		8429CF1A21E2EE3E006620E4 /* YYNoticeViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYNoticeViewTool.h; sourceTree = "<group>"; };
+		8429CF1B21E2EE3E006620E4 /* YYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTools.h; sourceTree = "<group>"; };
 		84620CB321E0AD8F00C0A408 /* YYTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84620CB621E0AD8F00C0A408 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84620CB721E0AD8F00C0A408 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,10 +56,6 @@
 		84620CD621E0AD9B00C0A408 /* YYToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84620CDA21E0AD9B00C0A408 /* YYToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYToolsUITests.m; sourceTree = "<group>"; };
 		84620CDC21E0AD9B00C0A408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84620CF421E0B70100C0A408 /* YYNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYNoticeView.h; sourceTree = "<group>"; };
-		84620CF521E0B70100C0A408 /* YYNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYNoticeView.m; sourceTree = "<group>"; };
-		84620CF621E0B70100C0A408 /* YYNoticeViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYNoticeViewTool.h; sourceTree = "<group>"; };
-		84620CF721E0B70100C0A408 /* YYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTools.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +83,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8429CF1621E2EE3E006620E4 /* YYTooling */ = {
+			isa = PBXGroup;
+			children = (
+				8429CF1721E2EE3E006620E4 /* YYNoticeViewTool */,
+				8429CF1B21E2EE3E006620E4 /* YYTools.h */,
+			);
+			path = YYTooling;
+			sourceTree = "<group>";
+		};
+		8429CF1721E2EE3E006620E4 /* YYNoticeViewTool */ = {
+			isa = PBXGroup;
+			children = (
+				8429CF1821E2EE3E006620E4 /* YYNoticeView.h */,
+				8429CF1921E2EE3E006620E4 /* YYNoticeView.m */,
+				8429CF1A21E2EE3E006620E4 /* YYNoticeViewTool.h */,
+			);
+			path = YYNoticeViewTool;
+			sourceTree = "<group>";
+		};
 		84620CAA21E0AD8F00C0A408 = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +125,7 @@
 		84620CB521E0AD8F00C0A408 /* YYTools */ = {
 			isa = PBXGroup;
 			children = (
-				84620CF221E0B70100C0A408 /* YYTools */,
+				8429CF1621E2EE3E006620E4 /* YYTooling */,
 				84620CB621E0AD8F00C0A408 /* AppDelegate.h */,
 				84620CB721E0AD8F00C0A408 /* AppDelegate.m */,
 				84620CB921E0AD8F00C0A408 /* ViewController.h */,
@@ -136,25 +155,6 @@
 				84620CDC21E0AD9B00C0A408 /* Info.plist */,
 			);
 			path = YYToolsUITests;
-			sourceTree = "<group>";
-		};
-		84620CF221E0B70100C0A408 /* YYTools */ = {
-			isa = PBXGroup;
-			children = (
-				84620CF721E0B70100C0A408 /* YYTools.h */,
-				84620CF321E0B70100C0A408 /* YYNoticeViewTool */,
-			);
-			path = YYTools;
-			sourceTree = "<group>";
-		};
-		84620CF321E0B70100C0A408 /* YYNoticeViewTool */ = {
-			isa = PBXGroup;
-			children = (
-				84620CF421E0B70100C0A408 /* YYNoticeView.h */,
-				84620CF521E0B70100C0A408 /* YYNoticeView.m */,
-				84620CF621E0B70100C0A408 /* YYNoticeViewTool.h */,
-			);
-			path = YYNoticeViewTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84620CBB21E0AD8F00C0A408 /* ViewController.m in Sources */,
-				84620CF821E0B70100C0A408 /* YYNoticeView.m in Sources */,
+				8429CF1C21E2EE3E006620E4 /* YYNoticeView.m in Sources */,
 				84620CC621E0AD9B00C0A408 /* main.m in Sources */,
 				84620CB821E0AD8F00C0A408 /* AppDelegate.m in Sources */,
 			);
