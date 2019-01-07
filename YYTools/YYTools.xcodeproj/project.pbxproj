@@ -15,7 +15,7 @@
 		84620CC621E0AD9B00C0A408 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CC521E0AD9B00C0A408 /* main.m */; };
 		84620CD021E0AD9B00C0A408 /* YYToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CCF21E0AD9B00C0A408 /* YYToolsTests.m */; };
 		84620CDB21E0AD9B00C0A408 /* YYToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CDA21E0AD9B00C0A408 /* YYToolsUITests.m */; };
-		84620CF021E0B25800C0A408 /* YYNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CEF21E0B25800C0A408 /* YYNoticeView.m */; };
+		84620CF821E0B70100C0A408 /* YYNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CF521E0B70100C0A408 /* YYNoticeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +52,10 @@
 		84620CD621E0AD9B00C0A408 /* YYToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84620CDA21E0AD9B00C0A408 /* YYToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYToolsUITests.m; sourceTree = "<group>"; };
 		84620CDC21E0AD9B00C0A408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84620CEB21E0B22300C0A408 /* YYNoticeViewTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYNoticeViewTool.h; sourceTree = "<group>"; };
-		84620CEE21E0B25800C0A408 /* YYNoticeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYNoticeView.h; sourceTree = "<group>"; };
-		84620CEF21E0B25800C0A408 /* YYNoticeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYNoticeView.m; sourceTree = "<group>"; };
-		84620CF121E0B34700C0A408 /* YYTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTools.h; sourceTree = "<group>"; };
+		84620CF421E0B70100C0A408 /* YYNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYNoticeView.h; sourceTree = "<group>"; };
+		84620CF521E0B70100C0A408 /* YYNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYNoticeView.m; sourceTree = "<group>"; };
+		84620CF621E0B70100C0A408 /* YYNoticeViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYNoticeViewTool.h; sourceTree = "<group>"; };
+		84620CF721E0B70100C0A408 /* YYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTools.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 		84620CB521E0AD8F00C0A408 /* YYTools */ = {
 			isa = PBXGroup;
 			children = (
-				84620CE921E0B20300C0A408 /* YYCommon */,
+				84620CF221E0B70100C0A408 /* YYTools */,
 				84620CB621E0AD8F00C0A408 /* AppDelegate.h */,
 				84620CB721E0AD8F00C0A408 /* AppDelegate.m */,
 				84620CB921E0AD8F00C0A408 /* ViewController.h */,
@@ -138,21 +138,21 @@
 			path = YYToolsUITests;
 			sourceTree = "<group>";
 		};
-		84620CE921E0B20300C0A408 /* YYCommon */ = {
+		84620CF221E0B70100C0A408 /* YYTools */ = {
 			isa = PBXGroup;
 			children = (
-				84620CF121E0B34700C0A408 /* YYTools.h */,
-				84620CEA21E0B20300C0A408 /* YYNoticeViewTool */,
+				84620CF321E0B70100C0A408 /* YYNoticeViewTool */,
+				84620CF721E0B70100C0A408 /* YYTools.h */,
 			);
-			path = YYCommon;
+			path = YYTools;
 			sourceTree = "<group>";
 		};
-		84620CEA21E0B20300C0A408 /* YYNoticeViewTool */ = {
+		84620CF321E0B70100C0A408 /* YYNoticeViewTool */ = {
 			isa = PBXGroup;
 			children = (
-				84620CEB21E0B22300C0A408 /* YYNoticeViewTool.h */,
-				84620CEE21E0B25800C0A408 /* YYNoticeView.h */,
-				84620CEF21E0B25800C0A408 /* YYNoticeView.m */,
+				84620CF421E0B70100C0A408 /* YYNoticeView.h */,
+				84620CF521E0B70100C0A408 /* YYNoticeView.m */,
+				84620CF621E0B70100C0A408 /* YYNoticeViewTool.h */,
 			);
 			path = YYNoticeViewTool;
 			sourceTree = "<group>";
@@ -287,8 +287,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84620CF021E0B25800C0A408 /* YYNoticeView.m in Sources */,
 				84620CBB21E0AD8F00C0A408 /* ViewController.m in Sources */,
+				84620CF821E0B70100C0A408 /* YYNoticeView.m in Sources */,
 				84620CC621E0AD9B00C0A408 /* main.m in Sources */,
 				84620CB821E0AD8F00C0A408 /* AppDelegate.m in Sources */,
 			);
