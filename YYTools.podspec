@@ -4,13 +4,9 @@
 
 
 Pod::Spec.new do |s|
-    s.name         = 'YYCommon'
+    s.name         = 'YYTools'
     s.version      = '1.0.0'
-    s.summary      = 'a common component'
-    # s.description  = <<-DESC
-    #                 私有Pods测试
-    #                 * sd 格式
-    #                DESC
+    s.summary      = 'a YYTools component'
     s.homepage     = 'https://github.com/ArrQ/YYTools'
     s.license      = 'MIT'
     s.authors      = { 'ArrQ' => '2206506738@qq.com' }
@@ -18,10 +14,10 @@ Pod::Spec.new do |s|
     s.framework = "UIKit","Foundation"
     s.source       = { :git => 'https://github.com/ArrQ/YYTools.git', :tag => s.version }
     s.requires_arc = true
-    s.source_files = 'YYTools/YYCommon/YYTools.h'
-    s.subspec 'Tool' do |ss|
+    s.source_files = 'YYTools/YYTools/YYTools/YYTools.h'
+    s.subspec 'YYNoticeViewTool' do |ss|
         ss.ios.deployment_target = '8.0'
-        ss.source_files = 'YYTools/YYCommon/YYNoticeViewTool/YYNoticeViewTool.h','YYTools/YYCommon/YYNoticeViewTool/**/**.{h,m}'
+        ss.source_files = 'YYTools/YYTools/YYTools/YYNoticeViewTool/YYNoticeViewTool.h','YYTools/YYTools/YYTools/YYNoticeViewTool/**/**.{h,m}'
     end
    
 end

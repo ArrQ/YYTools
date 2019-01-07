@@ -141,8 +141,8 @@
 		84620CF221E0B70100C0A408 /* YYTools */ = {
 			isa = PBXGroup;
 			children = (
-				84620CF321E0B70100C0A408 /* YYNoticeViewTool */,
 				84620CF721E0B70100C0A408 /* YYTools.h */,
+				84620CF321E0B70100C0A408 /* YYNoticeViewTool */,
 			);
 			path = YYTools;
 			sourceTree = "<group>";
