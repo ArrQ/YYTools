@@ -24,4 +24,5 @@ fi
 echo "add tag and push tag..."
 git tag ${newVersion}
 git push origin master --tags
-pod trunk push YYTooling.podspec --allow-warnings
+pod spec lint YYTooling.podspec --use-libraries
+pod trunk push YYTooling.podspec --allow-warnings --use-libraries
