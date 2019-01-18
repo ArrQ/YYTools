@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
     s.name         = 'YYTooling'
-    s.version      = '1.0.3'
+    s.version      = '1.0.4'
     s.summary      = 'a YYTooling component'
     s.description  = <<-DESC 
                           YYTooling 是一个用于保存一些常用工具类的工具
