@@ -5,8 +5,11 @@
 
 Pod::Spec.new do |s|
     s.name         = 'YYTooling'
-    s.version      = '1.0.0'
+    s.version      = '1.0.1'
     s.summary      = 'a YYTooling component'
+    s.description  = <<-DESC 
+                          YYTooling 是一个用于保存一些常用工具类的工具
+                   DESC
     s.homepage     = 'https://github.com/ArrQ/YYTools'
     s.license      = 'MIT'
     s.authors      = { 'ArrQ' => '2206506738@qq.com' }
