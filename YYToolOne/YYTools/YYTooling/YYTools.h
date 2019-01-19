@@ -51,12 +51,17 @@
 
 
 
+//baseVC tool
+#import "YYBaseVCHeader.h"
+
+//category tool
+#import "YYCategoryHeader.h"
 
 
 //view tool
 #import "YYNoticeViewTool.h"
 #import "YYIconImgManagerHeader.h"
-#import "YYBaseVCHeader.h"
+
 
 
 #endif /* YYTools_h */

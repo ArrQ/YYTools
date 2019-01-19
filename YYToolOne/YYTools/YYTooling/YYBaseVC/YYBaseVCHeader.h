@@ -9,5 +9,6 @@
 #ifndef YYBaseVCHeader_h
 #define YYBaseVCHeader_h
 
+#import "BgBaseViewController.h"
 
 #endif /* YYBaseVCHeader_h */
