@@ -56,6 +56,7 @@
 //view tool
 #import "YYNoticeViewTool.h"
 #import "YYIconImgManagerHeader.h"
+#import "YYBaseVCHeader.h"
 
 
 #endif /* YYTools_h */
