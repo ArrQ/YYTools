@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8413328E21F3165000C05E92 /* BgBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8413328D21F3165000C05E92 /* BgBaseViewController.m */; };
 		8429CF1C21E2EE3E006620E4 /* YYNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8429CF1921E2EE3E006620E4 /* YYNoticeView.m */; };
 		845A98E521F1D141004B8939 /* YYIconImgManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A98E421F1D141004B8939 /* YYIconImgManager.m */; };
 		84620CB821E0AD8F00C0A408 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CB721E0AD8F00C0A408 /* AppDelegate.m */; };
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8413328B21F3162700C05E92 /* YYBaseVCHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBaseVCHeader.h; sourceTree = "<group>"; };
+		8413328C21F3165000C05E92 /* BgBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BgBaseViewController.h; sourceTree = "<group>"; };
+		8413328D21F3165000C05E92 /* BgBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BgBaseViewController.m; sourceTree = "<group>"; };
 		8429CF1821E2EE3E006620E4 /* YYNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYNoticeView.h; sourceTree = "<group>"; };
 		8429CF1921E2EE3E006620E4 /* YYNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYNoticeView.m; sourceTree = "<group>"; };
 		8429CF1A21E2EE3E006620E4 /* YYNoticeViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYNoticeViewTool.h; sourceTree = "<group>"; };
@@ -87,10 +91,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8413328A21F3161200C05E92 /* YYBaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				8413328B21F3162700C05E92 /* YYBaseVCHeader.h */,
+				8413328C21F3165000C05E92 /* BgBaseViewController.h */,
+				8413328D21F3165000C05E92 /* BgBaseViewController.m */,
+			);
+			path = YYBaseVC;
+			sourceTree = "<group>";
+		};
 		8429CF1621E2EE3E006620E4 /* YYTooling */ = {
 			isa = PBXGroup;
 			children = (
 				8429CF1B21E2EE3E006620E4 /* YYTools.h */,
+				8413328A21F3161200C05E92 /* YYBaseVC */,
 				845A98E221F1D141004B8939 /* YYYYIconImgManager */,
 				8429CF1721E2EE3E006620E4 /* YYNoticeViewTool */,
 			);
@@ -302,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8413328E21F3165000C05E92 /* BgBaseViewController.m in Sources */,
 				84620CBB21E0AD8F00C0A408 /* ViewController.m in Sources */,
 				845A98E521F1D141004B8939 /* YYIconImgManager.m in Sources */,
 				8429CF1C21E2EE3E006620E4 /* YYNoticeView.m in Sources */,
