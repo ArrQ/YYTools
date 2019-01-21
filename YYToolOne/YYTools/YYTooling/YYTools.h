@@ -63,5 +63,6 @@
 #import "YYIconImgManagerHeader.h"
 
 
+#import "YYUrlManagerHeader.h"
 
 #endif /* YYTools_h */
