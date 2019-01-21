@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8404C67721F5A052001B341C /* NSMutableAttributedString+BgAttStr.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404C67621F5A052001B341C /* NSMutableAttributedString+BgAttStr.m */; };
 		8413328E21F3165000C05E92 /* BgBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8413328D21F3165000C05E92 /* BgBaseViewController.m */; };
 		8413329321F31ECE00C05E92 /* NSString+BgString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8413329221F31ECE00C05E92 /* NSString+BgString.m */; };
 		8413329621F31EE600C05E92 /* NSDate+BgDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8413329521F31EE600C05E92 /* NSDate+BgDate.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8404C67521F5A052001B341C /* NSMutableAttributedString+BgAttStr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+BgAttStr.h"; sourceTree = "<group>"; };
+		8404C67621F5A052001B341C /* NSMutableAttributedString+BgAttStr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+BgAttStr.m"; sourceTree = "<group>"; };
 		8413328B21F3162700C05E92 /* YYBaseVCHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBaseVCHeader.h; sourceTree = "<group>"; };
 		8413328C21F3165000C05E92 /* BgBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BgBaseViewController.h; sourceTree = "<group>"; };
 		8413328D21F3165000C05E92 /* BgBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BgBaseViewController.m; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				8413329021F31E6500C05E92 /* YYCategoryHeader.h */,
 				8413329121F31ECE00C05E92 /* NSString+BgString.h */,
 				8413329221F31ECE00C05E92 /* NSString+BgString.m */,
+				8404C67521F5A052001B341C /* NSMutableAttributedString+BgAttStr.h */,
+				8404C67621F5A052001B341C /* NSMutableAttributedString+BgAttStr.m */,
 				8413329421F31EE600C05E92 /* NSDate+BgDate.h */,
 				8413329521F31EE600C05E92 /* NSDate+BgDate.m */,
 			);
@@ -342,6 +347,7 @@
 				845A98E521F1D141004B8939 /* YYIconImgManager.m in Sources */,
 				8413329621F31EE600C05E92 /* NSDate+BgDate.m in Sources */,
 				8413329321F31ECE00C05E92 /* NSString+BgString.m in Sources */,
+				8404C67721F5A052001B341C /* NSMutableAttributedString+BgAttStr.m in Sources */,
 				8429CF1C21E2EE3E006620E4 /* YYNoticeView.m in Sources */,
 				84620CC621E0AD9B00C0A408 /* main.m in Sources */,
 				84620CB821E0AD8F00C0A408 /* AppDelegate.m in Sources */,
