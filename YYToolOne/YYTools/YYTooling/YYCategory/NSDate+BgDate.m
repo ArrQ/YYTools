@@ -91,7 +91,7 @@
 
 
 #pragma mark - 时间戳<-时间 yyyy-MM-dd HH:mm:ss
-+ (NSString *)getTimeStr_9WithTime:(NSString *)timeStr_10 andTimeFormat:(NSString *)format{
++ (NSString *)getTimeStr_10WithTime:(NSString *)timeStr_10 andTimeFormat:(NSString *)format{
     
     NSDateFormatter *formater = [[NSDateFormatter alloc] init];
     formater.dateFormat = format;

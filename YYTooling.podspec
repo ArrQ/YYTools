@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
     s.name         = 'YYTooling'
-    s.version      = '1.0.6'
+    s.version      = '1.0.9'
     s.summary      = 'a YYTooling component'
     s.description  = <<-DESC 
                           YYTooling 是一个用于保存一些常用工具类的工具
@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
     s.authors      = { 'ArrQ' => '2206506738@qq.com' }
     s.platform     = :ios, '8.0'
     s.framework = "UIKit","Foundation"
+    s.dependency 'AFNetworking','JSONModel','Masonry'
     s.source       = { :git => 'https://github.com/ArrQ/YYTools.git', :tag => s.version }
     s.requires_arc = true
-        s.dependency 'AFNetworking'
 
     s.source_files = 'YYToolOne/YYTools/YYTooling/YYTools.h'
      s.subspec 'YYNoticeViewTool' do |ss|
