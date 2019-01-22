@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EDA66DDDDA528EFD0576665 /* Pods_YYTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D747DF4906B03AC4932092 /* Pods_YYTools.framework */; };
 		8404C67721F5A052001B341C /* NSMutableAttributedString+BgAttStr.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404C67621F5A052001B341C /* NSMutableAttributedString+BgAttStr.m */; };
 		8404C68821F5BAC6001B341C /* YYUrlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404C68621F5BAC6001B341C /* YYUrlManager.m */; };
 		8413328E21F3165000C05E92 /* BgBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8413328D21F3165000C05E92 /* BgBaseViewController.m */; };
@@ -23,6 +22,7 @@
 		84620CC621E0AD9B00C0A408 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CC521E0AD9B00C0A408 /* main.m */; };
 		84620CD021E0AD9B00C0A408 /* YYToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CCF21E0AD9B00C0A408 /* YYToolsTests.m */; };
 		84620CDB21E0AD9B00C0A408 /* YYToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CDA21E0AD9B00C0A408 /* YYToolsUITests.m */; };
+		D09B8B992552FE137A98F905 /* libPods-YYTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32EFC0FC303197334E3502 /* libPods-YYTools.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		61D747DF4906B03AC4932092 /* Pods_YYTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8404C67521F5A052001B341C /* NSMutableAttributedString+BgAttStr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+BgAttStr.h"; sourceTree = "<group>"; };
 		8404C67621F5A052001B341C /* NSMutableAttributedString+BgAttStr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+BgAttStr.m"; sourceTree = "<group>"; };
 		8404C68521F5BAC6001B341C /* YYUrlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYUrlManager.h; sourceTree = "<group>"; };
@@ -80,6 +79,7 @@
 		84620CD621E0AD9B00C0A408 /* YYToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84620CDA21E0AD9B00C0A408 /* YYToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYToolsUITests.m; sourceTree = "<group>"; };
 		84620CDC21E0AD9B00C0A408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE32EFC0FC303197334E3502 /* libPods-YYTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YYTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45005565B4C20F71B8F8C80 /* Pods-YYTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYTools/Pods-YYTools.release.xcconfig"; sourceTree = "<group>"; };
 		C70F3E9916A039DB29B19D16 /* Pods-YYTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYTools/Pods-YYTools.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EDA66DDDDA528EFD0576665 /* Pods_YYTools.framework in Frameworks */,
+				D09B8B992552FE137A98F905 /* libPods-YYTools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +113,7 @@
 		2AFEC0F99C9A7A506C0FC530 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				61D747DF4906B03AC4932092 /* Pods_YYTools.framework */,
+				AE32EFC0FC303197334E3502 /* libPods-YYTools.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,7 +262,6 @@
 				84620CAF21E0AD8F00C0A408 /* Sources */,
 				84620CB021E0AD8F00C0A408 /* Frameworks */,
 				84620CB121E0AD8F00C0A408 /* Resources */,
-				B6A42EC47441FC1B7F15F34D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -395,28 +394,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B6A42EC47441FC1B7F15F34D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YYTools/Pods-YYTools-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYTools/Pods-YYTools-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
