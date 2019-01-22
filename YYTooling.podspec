@@ -12,12 +12,14 @@ Pod::Spec.new do |s|
                    DESC
     s.homepage     = 'https://github.com/ArrQ/YYTools'
     s.license      = 'MIT'
+    # s.license = {:type = >'MIT',:file =>'LICENSE'}
     s.authors      = { 'ArrQ' => '2206506738@qq.com' }
     s.platform     = :ios, '8.0'
     s.framework = "UIKit","Foundation"
-    s.dependency = 'AFNetworking','Masonry','JSONModel','FCUUID'
     s.source       = { :git => 'https://github.com/ArrQ/YYTools.git', :tag => s.version }
     s.requires_arc = true
+        s.dependency 'AFNetworking'
+
     s.source_files = 'YYToolOne/YYTools/YYTooling/YYTools.h'
      s.subspec 'YYNoticeViewTool' do |ss|
         ss.ios.deployment_target = '8.0'
@@ -30,6 +32,14 @@ Pod::Spec.new do |s|
      s.subspec 'YYBaseVC' do |ss|
         ss.ios.deployment_target = '8.0'
         ss.source_files = 'YYToolOne/YYTools/YYTooling/YYBaseVC/YYBaseVCHeader.h','YYToolOne/YYTools/YYTooling/YYBaseVC/**/**.{h,m}'
+    end
+     s.subspec 'YYCategory' do |ss|
+        ss.ios.deployment_target = '8.0'
+        ss.source_files = 'YYToolOne/YYTools/YYTooling/YYCategory/YYCategoryHeader.h','YYToolOne/YYTools/YYTooling/YYCategory/**/**.{h,m}'
+    end
+     s.subspec 'YYUrlManager' do |ss|
+        ss.ios.deployment_target = '8.0'
+        ss.source_files = 'YYToolOne/YYTools/YYTooling/YYUrlManager/YYUrlManagerHeader.h','YYToolOne/YYTools/YYTooling/YYUrlManager/**/**.{h,m}'
     end
     
 end
@@ -53,5 +63,8 @@ end
 
 # pod trunk push YYTooling.podspec --allow-warnings --use-libraries   // 依赖库的时候用嘛
 
+
+# 或者
+# sh upload_pod_run.sh
 
 

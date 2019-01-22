@@ -19,7 +19,7 @@ if [[ ${isCommit} = "y" ]] || [[ ${isCommit} = "Y" ]]; then
 	git commit -am ${commitInfo}
 	echo "push origin master..."
 	git pull origin master
-	git push origin master
+#    git push origin master
 fi
 echo "add tag and push tag..."
 git tag ${newVersion}
