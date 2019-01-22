@@ -9,12 +9,14 @@
 #ifndef YYTools_h
 #define YYTools_h
 
-// 库
+// 系统 库
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-//bg_BaseVC
-
+// 三方 库
+#import <AFNetworking/AFNetworking.h>
+#import <Masonry.h>
+#import <JSONModel/JSONModel.h>
 
 //bg_macro
 

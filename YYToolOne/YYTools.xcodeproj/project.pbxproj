@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		155711AC49D93626F9BFBCA5 /* libPods-YYTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 220FE1E3945D30CFAC052228 /* libPods-YYTools.a */; };
 		8404C67721F5A052001B341C /* NSMutableAttributedString+BgAttStr.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404C67621F5A052001B341C /* NSMutableAttributedString+BgAttStr.m */; };
 		8404C68821F5BAC6001B341C /* YYUrlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404C68621F5BAC6001B341C /* YYUrlManager.m */; };
 		8413328E21F3165000C05E92 /* BgBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8413328D21F3165000C05E92 /* BgBaseViewController.m */; };
@@ -22,7 +23,6 @@
 		84620CC621E0AD9B00C0A408 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CC521E0AD9B00C0A408 /* main.m */; };
 		84620CD021E0AD9B00C0A408 /* YYToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CCF21E0AD9B00C0A408 /* YYToolsTests.m */; };
 		84620CDB21E0AD9B00C0A408 /* YYToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84620CDA21E0AD9B00C0A408 /* YYToolsUITests.m */; };
-		958D0C1E2740DCA629369B5C /* Pods_YYTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58408881947F5877A5C9E6F1 /* Pods_YYTools.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		58408881947F5877A5C9E6F1 /* Pods_YYTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		220FE1E3945D30CFAC052228 /* libPods-YYTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YYTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8404C67521F5A052001B341C /* NSMutableAttributedString+BgAttStr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+BgAttStr.h"; sourceTree = "<group>"; };
 		8404C67621F5A052001B341C /* NSMutableAttributedString+BgAttStr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+BgAttStr.m"; sourceTree = "<group>"; };
 		8404C68521F5BAC6001B341C /* YYUrlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYUrlManager.h; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				958D0C1E2740DCA629369B5C /* Pods_YYTools.framework in Frameworks */,
+				155711AC49D93626F9BFBCA5 /* libPods-YYTools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +113,7 @@
 		2AFEC0F99C9A7A506C0FC530 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				58408881947F5877A5C9E6F1 /* Pods_YYTools.framework */,
+				220FE1E3945D30CFAC052228 /* libPods-YYTools.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,7 +262,6 @@
 				84620CAF21E0AD8F00C0A408 /* Sources */,
 				84620CB021E0AD8F00C0A408 /* Frameworks */,
 				84620CB121E0AD8F00C0A408 /* Resources */,
-				202F45EFD32241E265CD3F66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -379,24 +378,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		202F45EFD32241E265CD3F66 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YYTools/Pods-YYTools-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYTools/Pods-YYTools-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B5031A3CBF186A2C2E8390A3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
