@@ -2,6 +2,7 @@ target 'YYTools' do
 platform :ios, '8.0'
 
 pod 'AFNetworking'
+pod 'JSONModel'
 pod 'Masonry'
 
 
