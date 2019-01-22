@@ -59,7 +59,7 @@ static NSMutableArray *_allSessionTaskArray;
     }
 }
 #pragma mark - GET请求
-+ (NSURLSessionDataTask *)GET:(NSString *)url responeseType:(bg_HttpResponseType )responseType parameters:(NSDictionary *)params success:(bg_HttpRequetSuccess)success failure:(bg_HttpRequesError)failure responeseHeader:(bg_HTTPURLResponse)responese{
++ (NSURLSessionDataTask *)GET:(NSString *)url responeseType:(bg_HttpResponseType )responseType parameters:(id)params success:(bg_HttpRequetSuccess)success failure:(bg_HttpRequesError)failure responeseHeader:(bg_HTTPURLResponse)responese{
     typeof(self) __weak weakSelf = self;
     
     url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
@@ -90,7 +90,7 @@ static NSMutableArray *_allSessionTaskArray;
     return task;
 }
 #pragma mark - POST请求
-+ (NSURLSessionDataTask *)POST:(NSString *)url responeseType:(bg_HttpResponseType )responseType parameters:(NSDictionary *)params success:(bg_HttpRequetSuccess)success failure:(bg_HttpRequesError)failure responeseHeader:(bg_HTTPURLResponse)responese{
++ (NSURLSessionDataTask *)POST:(NSString *)url responeseType:(bg_HttpResponseType )responseType parameters:(id)params success:(bg_HttpRequetSuccess)success failure:(bg_HttpRequesError)failure responeseHeader:(bg_HTTPURLResponse)responese{
     typeof(self) __weak weakSelf = self;
     url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     

@@ -56,7 +56,7 @@ typedef void(^bg_HTTPURLResponse)(NSHTTPURLResponse *response);
  *  @param responese     请求响应头
  *  @return 返回的对象可取消请求,调用cancel方法
  */
-+ (NSURLSessionDataTask *)GET:(NSString *)url responeseType:(bg_HttpResponseType )responseType parameters:(NSDictionary *)params success:(bg_HttpRequetSuccess)success failure:(bg_HttpRequesError)failure responeseHeader:(bg_HTTPURLResponse)responese;
++ (NSURLSessionDataTask *)GET:(NSString *)url responeseType:(bg_HttpResponseType )responseType parameters:(id)params success:(bg_HttpRequetSuccess)success failure:(bg_HttpRequesError)failure responeseHeader:(bg_HTTPURLResponse)responese;
 
 
 /**
@@ -70,7 +70,7 @@ typedef void(^bg_HTTPURLResponse)(NSHTTPURLResponse *response);
  *  @param responese     请求响应头
  *  @return 返回的对象可取消请求,调用cancel方法
  */
-+ (NSURLSessionDataTask *)POST:(NSString *)url responeseType:(bg_HttpResponseType )responseType parameters:(NSDictionary *)params success:(bg_HttpRequetSuccess)success failure:(bg_HttpRequesError)failure responeseHeader:(bg_HTTPURLResponse)responese;
++ (NSURLSessionDataTask *)POST:(NSString *)url responeseType:(bg_HttpResponseType )responseType parameters:(id)params success:(bg_HttpRequetSuccess)success failure:(bg_HttpRequesError)failure responeseHeader:(bg_HTTPURLResponse)responese;
 
 /**
  *  取消全部的HTTP请求
