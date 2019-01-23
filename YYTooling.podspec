@@ -46,27 +46,3 @@ Pod::Spec.new do |s|
     
 end
 
-# /************ 版本更新维护 ***************/
-
-
-# git tag 1.0.1
-
-# git push origin 1.0.1
-
-# pod lib lint YYTooling.podspec --allow-warnings
-
-# pod trunk push YYTooling.podspec --allow-warnings
-# pod lib lint YYTooling.podspec --verbose(依赖库) 有错误提示时 用这个吧，记得添加依赖
-# 如果有引用到库framwork或C语言库的话必须使用
-
-# pod spec lint YYTooling.podspec --use-libraries // 验证
-
-# pod trunk push YYTooling.podspec --use-libraries           // 上传
-
-# pod trunk push YYTooling.podspec --allow-warnings --use-libraries   // 依赖库的时候用嘛
-
-
-# 或者
-# sh upload_pod_run.sh
-
-
